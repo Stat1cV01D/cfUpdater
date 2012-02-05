@@ -7,15 +7,6 @@ const char messages[][50] = { "Downloading", "Transferring", "Copying" };
 const char messages2[][50] = { "downloaded", "transferred", "copied" };
 bool isNcf;
 
-/*void CFTAPI_init()
-{
-	if (inited)
-		return;
-	CFTAPI_initLogs(NULL, true);
-	CFTAPI_setLogLevel(0);
-	inited=true;
-}*/
-
 GCF RAIN_Reconnect(DLDATASTRUCT DLDS, MESSAGEID Msg)
 {
 	if (DLDS.remoteGcf)
