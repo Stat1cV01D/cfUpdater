@@ -1,3 +1,4 @@
+Commandline Cache files Updater
 cfUpdater <action> <path to GCF> [path to the game folder (for NCF)] <additional commands>
 
 Actions and additional commands: 
