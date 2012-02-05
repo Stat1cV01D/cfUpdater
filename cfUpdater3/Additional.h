@@ -26,7 +26,8 @@ typedef enum
 	CreatePatch,
 	ApplyPatch,
 	DLFromSteamServers,
-	DLFromCFTContentServer
+	DLFromCFTContentServer,
+	ValidateCF
 } ACTION;
 
 typedef struct

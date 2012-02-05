@@ -7,6 +7,15 @@ const char messages[][50] = { "Downloading", "Transferring", "Copying" };
 const char messages2[][50] = { "downloaded", "transferred", "copied" };
 bool isNcf;
 
+/*void CFTAPI_init()
+{
+	if (inited)
+		return;
+	CFTAPI_initLogs(NULL, true);
+	CFTAPI_setLogLevel(0);
+	inited=true;
+}*/
+
 GCF RAIN_Reconnect(DLDATASTRUCT DLDS, MESSAGEID Msg)
 {
 	if (DLDS.remoteGcf)
@@ -518,6 +527,7 @@ void PrintUsage()
 			"2 <update file>   Apply an update.\n"
 			"3 <DLparameters>  Download GCF updates from Steam server.\n"
 			"4 <DLparameters>  Download GCF updates from CFT content server.\n"
+			"5 <Fix errors>    Validates the cache file. <Fix errors> must be 0 or 1.\n"
 			"\n"
 			"  <DLparameters> are:\n"
 			"  <IP:Port>          IP and port of either Steam master server\n"
@@ -542,6 +552,7 @@ void PrintUsage()
 			"cfUpdater.exe 3 \"C:\\counter-strike.gcf\" \"gds1.steampowered.com:27030\" -1 1 11 MyAccount MyPasswordIsblablabla\n"
 			"cfUpdater.exe 4 \"C:\\counter-strike.gcf\" \"123.321.213.312:27030\" -1 0 11\n"
 			"cfUpdater.exe 4 \"C:\\counter-strike.gcf\" \"123.321.213.312:27030\" 2 1 11\n"
+			"cfUpdater.exe 5 \"C:\\counter-strike.gcf\" 1\n"
 			);
 
 	getchar();

@@ -22,6 +22,17 @@ typedef struct
 	unsigned int GCFVersion;
 } GCFINFO;
 
+int g_ValidationResult = 0;
+void __cdecl GcfToolHandler(GCF_TOOL tool, float progress, bool isFinished, int result, const char * resultMessage)
+{
+	printf("\r%.2f %%", progress*100);
+	if (isFinished)
+	{
+		printf("\nResult: %s (%d)", resultMessage, result);
+		g_ValidationResult = result;
+	}
+}
+
 int main(int argc, TCHAR* argv[])
 {
 	const bool safemount = false;
@@ -58,6 +69,13 @@ int main(int argc, TCHAR* argv[])
 	DLDS.CommonPath = _CommonPath;
 	DLDS.Action = Action;
 	DLDS.localGcf = (isNcf ? RAIN_mountNcf(&CFfile[0], DLDS.CommonPath, safemount) : RAIN_mountGcf(&CFfile[0], safemount));
+
+	if (!DLDS.localGcf)
+	{
+		die(0, 0);
+		printf("Error opening the specified GCF");
+		return 1;
+	}
 
 	//RAIN_unmountGcf(localGcf);
 
@@ -342,6 +360,30 @@ int main(int argc, TCHAR* argv[])
 
 			RAIN_unmountGcf(DLDS.remoteGcf);
 			RAIN_unmountGcf(DLDS.localGcf);
+		}
+		break;
+	case ValidateCF:
+		{
+			if (argc != 1+3+iNcfArg)
+			{
+				die(DLDS.localGcf, 0);
+				PrintUsage();
+				return 1;
+			}
+
+			bool FixErrors = (bool)(atoi(argv[3+iNcfArg]) != 0);
+
+			printf("Now validating %s%s\n", CFfile, (FixErrors ? " and fixing the content" : ""));
+
+			GCF_TOOL ValidationTool = RAIN_validate(DLDS.localGcf, &GcfToolHandler, true, FixErrors);
+
+			while (RAIN_isRunningTool(ValidationTool))
+			{
+				Sleep(10);
+			}
+			
+			RAIN_closeTool(ValidationTool);
+			return g_ValidationResult;
 		}
 		break;
 	}
