@@ -1,0 +1,28 @@
+cfUpdater <action> <path to GCF> [path to the game folder (for NCF)] <additional commands>
+
+Actions and additional commands: 
+
+0 - Create manifest file (similar to CFT .archive file). 
+1 <manifest> - Create an update file. 
+2 <update file> - Apply an update. 
+3 <DLparameters> - Download GCF updates from Steam server. 
+4 <DLparameters> - Download GCF updates from CFT content server. 
+	<DLparameters> are: 
+		<IP:Port> - IP and port of either Steam master server or the CFT content server. 
+		<Version> - Version of the GCF to request from server. 
+		<CreateUpdFile> - Must be 1 or 0. Create an .update.gcf file and apply the updates. 
+		<AppID> - AppID of the GCF to download from scratch|update. Can be "NULL". 
+		NOTE: if <Version> is -1 and AppID is specified then the latest version is acquired from server. 
+		[Login] - User account login (for Action==3). 
+		[Password] - Password for the account (for Action==3). 
+
+Example cfUpdater usage:
+cfUpdater.exe 0 "C:\counter-strike.gcf" 
+cfUpdater.exe 0 "C:\audiosurf content public.ncf" "C:\SteamApps\common\audiosurf"
+cfUpdater.exe 1 "C:\counter-strike.gcf" "C:\counter-strike.0.CFUmanifest"
+cfUpdater.exe 2 "C:\counter-strike.gcf" "C:\counter-strike.0_to_2.update.gcf"
+cfUpdater.exe 2 "C:\audiosurf content public.ncf" "C:\SteamApps\common\audiosurf" "C:\audiosurf content public.10_to_33.update.gcf"
+cfUpdater.exe 3 "C:\counter-strike.gcf" "gds1.steampowered.com:27030" 2 0 NULL MyAccount MyPasswordIsblablabla 
+cfUpdater.exe 3 "C:\counter-strike.gcf" "gds1.steampowered.com:27030" -1 1 11 MyAccount MyPasswordIsblablabla 
+cfUpdater.exe 4 "C:\counter-strike.gcf" "123.321.213.312:27030" -1 0 11 
+cfUpdater.exe 4 "C:\counter-strike.gcf" "123.321.213.312:27030" 2 1 11
