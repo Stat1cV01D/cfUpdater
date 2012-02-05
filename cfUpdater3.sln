@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cfUpdater3", "cfUpdater3\cfUpdater3.vcxproj", "{905F4172-EB32-40F7-9F13-E870E0E14CDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{905F4172-EB32-40F7-9F13-E870E0E14CDA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{905F4172-EB32-40F7-9F13-E870E0E14CDA}.Debug|Win32.Build.0 = Debug|Win32
+		{905F4172-EB32-40F7-9F13-E870E0E14CDA}.Release|Win32.ActiveCfg = Release|Win32
+		{905F4172-EB32-40F7-9F13-E870E0E14CDA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

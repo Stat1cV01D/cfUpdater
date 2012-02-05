@@ -1,0 +1,67 @@
+2010/10/01 03:46:06 -  INFO : Connecting to general directory server 127.0.0.1:27030
+2010/10/01 03:46:06 -  INFO : Authenticating  ...
+2010/10/01 03:46:07 - ERROR : Invalid protocol version
+2010/10/01 04:24:41 -  INFO : Connecting to general directory server 127.0.0.1:27030
+2010/10/01 04:24:41 -  INFO : Authenticating  ...
+2010/10/01 04:24:41 - ERROR : Invalid protocol version
+2010/10/01 04:29:22 -  INFO : Connecting to general directory server 127.0.0.1:27030
+2010/10/01 04:29:22 -  INFO : Authenticating  ...
+2010/10/01 04:29:22 - ERROR : Invalid protocol version
+2010/10/05 04:09:29 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:13:03 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:13:07 - ERROR : Illegal path
+2010/10/05 04:13:54 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:14:04 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:14:04 - ERROR : Illegal path
+2010/10/05 04:15:05 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:15:07 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:16:22 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:16:29 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:17:23 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:17:31 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:17:38 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:19:26 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:19:32 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:20:41 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:20:48 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:21:00 - ERROR : Illegal entry
+2010/10/05 04:23:13 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:23:20 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:24:29 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:24:33 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:24:50 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:24:53 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:25:14 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:25:16 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:25:58 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:26:30 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:27:03 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:27:10 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:27:14 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:27:29 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:27:33 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:28:06 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:28:17 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:28:48 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:29:11 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:29:13 - ERROR : Illegal entry
+2010/10/05 04:29:59 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:30:12 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:30:27 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:30:30 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:37:22 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:37:32 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:37:33 - ERROR : Invalid manifest entry path (missing starting '/')
+2010/10/05 04:38:00 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:39:21 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:39:54 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:41:55 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:43:59 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:53:52 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:53:58 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:54:26 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:54:58 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:55:29 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 04:56:22 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 05:05:28 -  INFO : Connecting to content server 127.0.0.1:27030
+2010/10/05 05:07:17 -  INFO : Connecting to content server 127.0.0.1:27030
